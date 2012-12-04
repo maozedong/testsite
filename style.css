@@ -1,43 +1,114 @@
+a
+{
+    text-decoration:none;
+    color:Black;
+
+}
+a:hover
+{
+    color:Red;
+}   
+div
+{
+
+}
 h1
 {
-    text-align:center;
+    margin:0;
+    padding:0;
 }
-#main
+#navlist li
 {
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
-    height:auto;
-    overflow: auto;
+    display:inline;
+    list-style-type: none;
+    margin:0;
+    padding:0;
 }
-.mainMargins
+.hide
 {
-    margin:5;
+    display:none;
 }
-#header
+.show
 {
-    border-style:solid;
+    position:absolute;
+    z-index:1;
+}
+.leftMenu
+{
     text-align:right;
-    width:30%;
 }
-#content
+.rightAdvertising
 {
-        overflow: auto;
-            height:auto;
+    margin:20px auto;
+    width:80%;
 }
-#raw
+.rightAdvertImg
 {
+    width:100%;
 }
-.wish
+div#container
 {
-    border-style:solid;
-    display:inline-block;
-    width:30%;
-    height:100px;
-        margin:5;
+    background-color:Maroon;
 }
-p.wishes
+div#header
 {
+    background-color:Olive;
+    text-align:left;
+}
+div#body
+{
+    height:800px;
+    background-color:Navy;
+}
+div#top
+{
+    background-color:Aqua;
     text-align:center;
-    vertical-align:middle;
+    border-top:1px solid Aqua;
+}
+div#left
+{
+    background-color:Blue;
+    float:left;
+    height:inherit;
+    width:20%;
+}
+div#right
+{
+    background-color:Fuchsia;
+    float:left;
+    height:inherit;
+    width:20%;
+}
+div#center
+{
+    float:left;
+    width:60%;
+    background-color:Gray;
+    height:inherit;
+}
+div#footer
+{
+    background-color:Lime;
+}
+#topMenu
+{
+    list-style:none;
+    position:relative;
+    margin:0;
+    padding:0;
+}
+#topMenu li
+{
+    display:inline;
+    margin:0;
+    padding:0;
+}
+img.images
+{
+    width:100px;
+}
+img#logo
+{
+    display:inline;
 }

@@ -1,41 +1,80 @@
 <!DOCTYPE html />
 <html>
 <head>
-    <title>SoftServeJavaScriptTest</title>
-    <script type="text/javascript" src="script.js"></script>
+    <title>Company Site Template</title>
     <link rel="Stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-    <div id="main">
-    <h1>дошка побажань</h1>
-        <div id="header" class="mainMargins">
-            <form name="form1" action="javascript:formSubmit()" <!--onsubmit="formSubmit()-->">
-            <label>Імя</label>
-            <input name="f1name" type="text"/><br />
-            <label>Email</label>
-            <input name="f1email" type="text"/><br />
-            <label>Побажання</label><br />
-            <input name="f1wish" type="text"/><br />
-            <input type="submit" value="Додати"/>
-            </form>
+    <div id="container">
+        <div id="header">
+            <h1><a href="#"><img id="logo" src="companyLogo/logo_final_transparent_blog.png" />COMPANY NAME</a></h1>
+            </div>
+        <div id="body">
+            <div id="top">
+                <ul id="topMenu">
+                    <li><a href="#">First item</a></li>
+                    <li><a href="#">Second item</a></li>
+                    <li><a href="#">Third item</a></li>
+                    <li><a href="#">Fourth item</a></li>
+                </ul>
+            </div>
+            <div id="left">
+                <div class="leftMenu">
+                    <a href="#">First item</a></div>
+                <div class="leftMenu">
+                    <a href="#">Second item</a></div>
+                <div class="leftMenu">
+                    <a href="#">Third item</a></div>
+                <div class="leftMenu">
+                    <a href="#">Fourth item</a></div>
+            </div>
+            <div id="center">
+            <div id="imgContainer">
+                <img id="mainImg" class="images" src="images/Computer Engineering Gallery.jpg" alt="img" />
+                <img class="images" src="images/services_front.jpg" alt="img" />
+                <img class="images" src="images/Generic-Electronics_31.jpg" alt="img" />
+                <img class="images" src="images/consumer_electronics.jpg" alt="img" />
+            </div>
+            <div id="bigImg"></div>    
+                <p <!--style="display:none;"-->>
+                    Когда сотрудник Ливерморской национальной лаборатории Эшер Лэнгтон купил в одном
+                    онлайн-магазине фильм, для которого требовался проприетарный видеопрогрыватель от
+                    компании Leaping Brain, у него возникли трудности с установкой плеера на iPhone.
+                    Пытаясь разобраться с проблемой, он обнаружил, что видео загрузилось в скрытую папку
+                    в виде набора обычных файлов формата .mov. Правда, ни один из них воспроизвести
+                    не удалось. Проприетарный плеер с DRM-защитой оказался скриптом-обёрткой на Python
+                    вокруг нескольких библиотек из проекта VLC. Код на Python совершал какие-то преобразования
+                    над файлом, прежде чем скормить его VLC. В FAQ на сайте Leaping Brain было сказано,
+                    что их плеер использует невероятно крутой криптографический алгоритм для реализации
+                    DRM: «Мы применяем проприетарный алгоритм шифрования BrainTrust™ при загрузке видео
+                    на свои серверы. Если даже кто-то и сможет получить доступ к вашему контенту, файлы
+                    не воспроизведутся и будут совершенно бесполезны, потому что они хранятся в зашифрованном
+                    виде. После загрузки на устройство пользователя проиграть файлы может только легальный
+                    пользователь и только через MOD Machine Player. Мы не знаем более надёжной схемы,
+                    чем эта. Windows Media DRM легко поддаётся взлому и работает только под Windows,
+                    тогда как BrainTrust™ практически невозможно взломать, и эта технология отлично
+                    работает под Windows 8, Vista, XP и Mac.» Расковыряв скрипт-обёртку, Эшер Лэнгтон
+                    сохранил обработанный файл и сравнил его с «зашифрованным». Оказалось, что неприступный
+                    алгоритм заключался в том, что в первых 15 килобайтах файла несколько начальных
+                    байтов каждого килобайтного блока были сXOR-ены с «секретным ключом», который представлял
+                    собой строку «RANDOM_STRING». Источник: блог Эшера Лэнгтона.</p>
+            </div>
+            <div id="right">
+                <div class="rightAdvertising">
+                    <a href="#">
+                        <img class="rightAdvertImg" src="advert/picture_ambient_advertising.jpg" alt="First Advertising block" /></a></div>
+                <div class="rightAdvertising">
+                    <a href="#">
+                        <img class="rightAdvertImg" src="advert/01_Culture_Advertising_Design_Advertising_Campaigns_for_the_Colomer_Group_thumb.jpg"
+                            alt="Second Advertising block" /></a></div>
+            </div>
+            <div id="footer">
+                <span>footer</span></div>
         </div>
-        <div id="content" class="mainMargins">
-            <div class="wish">
-                <p class="wishes">sdfdf</p>
-            </div>
-            <div class="wish">
-                <p class="wishes">sdfdf</p>
-            </div>
-            <div class="wish">
-                <p class="wishes">sdfdf</p>
-            </div>
-            <div class="wish">
-                <p class="wishes">sdfdf</p>
-            </div>
-            <div class="wish">
-                <p class="wishes">sdfdf</p>
-            </div>
-        </div>
+        <div id="imgbox" style="display:none;"></div>
     </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    <!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>-->
 </body>
 </html>
